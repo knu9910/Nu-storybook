@@ -40,7 +40,7 @@
     "eslint-config-next": "15.1.6",
     "eslint-plugin-storybook": "^0.11.2",
     "postcss": "^8",
-    "storybook": "^8.5.3",
+    "storybook": "link:",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },

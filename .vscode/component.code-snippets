@@ -56,6 +56,43 @@
     "description": "Next Component"
   },
 
+  "Story Component": {
+    "prefix": "story-component",
+    "body": [
+      "import { cn } from '@/lib/utils';",
+      "import { cva, type VariantProps } from 'class-variance-authority';",
+      "",
+      "// componentVariants 스타일 정의",
+      "const componentVariants = cva('', {",
+      "  variants: {",
+      "    variant: {",
+      "      default: '', // 기본 스타일",
+      "      primary: '', // 파란색 스타일",
+      "      secondary: '', // 노란색 스타일",
+      "      destructive: '', // 빨간색 스타일",
+      "    },",
+      "  },",
+      "  defaultVariants: {",
+      "    variant: 'default', // 기본 variant",
+      "  },",
+      "});",
+      "",
+      "// Props 타입 정의",
+      "type Props = React.HTMLAttributes<HTMLElement> & VariantProps<typeof componentVariants>;",
+      "",
+      "export const ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}} = ({ className }: Readonly<Props>) => {",
+      "  return (",
+      "    <div className={cn('$2', className)}>",
+      "      $3",
+      "    </div>",
+      "  )",
+      "};",
+      "",
+      ""
+    ],
+    "description": "Story Component with variants (No logic)"
+  },
+
   "Create Context": {
     "prefix": "next-context",
     "body": [
