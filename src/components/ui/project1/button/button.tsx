@@ -7,8 +7,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-[#f8fafc80] border-[rgb(203_213_225)] text-[#475569]", // 기본 스타일
-        primary: "bg-primary/10 border-primary text-[#2563EB]", // 파란색 스타일
+        default: "bg-[#CBD5E1]/10 border-[#CBD5E1] text-[#475569]", // 기본 스타일
+        primary: "bg-[#93C5FD]/10 border-[#93C5FD] text-[#2563EB]", // 파란색 스타일
         secondary: "bg-[#FCD34D]/10 border-[#FCD34D] text-[#D97706]", // 노랑 스타일
         green: "bg-[#34D399]/10 border-[#34D399] text-[#047857]", // 초록색 스타일
       },
