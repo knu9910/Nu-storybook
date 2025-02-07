@@ -10,7 +10,7 @@ const meta = {
     layout: "centered",
   },
   args: {
-    children: "Button", // 기본 children 값
+    children: "", // 기본 children 값
     variant: "default", // 기본 variant 설정
   },
 } satisfies Meta<typeof Button>;
@@ -23,20 +23,26 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     variant: "default", // 기본 variant 설정
-    children: "Default Button", // 버튼 텍스트
+    children: "디폴트", // 버튼 텍스트
   },
 };
 
 export const Primary: Story = {
   args: {
     variant: "primary", // primary 스타일 적용
-    children: "Primary Button", // 버튼 텍스트
+    children: "검색", // 버튼 텍스트
   },
 };
 
 export const Secondary: Story = {
   args: {
     variant: "secondary", // secondary 스타일 적용
-    children: "Secondary Button", // 버튼 텍스트
+    children: "검색", // 버튼 텍스트
+  },
+};
+export const Green: Story = {
+  args: {
+    variant: "green", // secondary 스타일 적용
+    children: "검색", // 버튼 텍스트
   },
 };
