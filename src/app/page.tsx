@@ -1,4 +1,4 @@
-import { SwiperComponent } from "@/components/ui/swiper/swiper-component";
+import { SwiperComponent } from "@/components/ui/project1/swiper/swiper-component";
 
 export default function Home() {
   return (
